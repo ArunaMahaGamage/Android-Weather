@@ -4,7 +4,7 @@ package com.example.weather.beans;
  * Created by aruna on 1/30/18.
  */
 
-class ListMain {
+public class ListMain {
     private double temp;
     private double temp_min;
     private double temp_max;

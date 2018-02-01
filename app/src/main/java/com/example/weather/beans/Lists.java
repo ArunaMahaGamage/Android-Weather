@@ -6,7 +6,7 @@ import java.util.List;
  * Created by aruna on 1/30/18.
  */
 
-class Lists {
+public class Lists {
 
     private int dt;
     private ListMain main;

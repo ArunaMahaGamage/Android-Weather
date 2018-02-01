@@ -4,7 +4,7 @@ package com.example.weather.beans;
  * Created by aruna on 1/30/18.
  */
 
-class ListWeather {
+public class ListWeather {
     private int id;
     private String main;
     private String description;
