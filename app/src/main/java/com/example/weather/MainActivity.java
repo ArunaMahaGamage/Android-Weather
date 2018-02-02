@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Retrofit Data
         List list = weather.getList();
-        Lists lists = (Lists) list.get(0);
+        Lists lists = (Lists) list.get(1);
         ListWeather listWeather = lists.getWeather().get(0);
 
 
@@ -121,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
 
         tv_current_weather_description.setText(listWeather.getMain());
         tv_current_weather_description.setTextColor(Color.WHITE);
+
         tv_current_temp.setText(String.valueOf(currentTemp) + "°" + "C");
         tv_current_temp.setTextSize(60f);
         tv_current_temp.setTextColor(Color.WHITE);
@@ -141,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
         mLayoutManager = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
         mRecyclerView.setLayoutManager(mLayoutManager);
         String[] myDataset = {"A","B","C","D","E","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
-        mAdapter = new MyAdapter(myDataset);
+        mAdapter = new MyAdapter(weather);
         mRecyclerView.setAdapter(mAdapter);
     }
 
